@@ -1,1 +1,3 @@
-# ittek_dreamteam
+# Kowabunga!
+
+Github for studiegruppe 8 // KEA
