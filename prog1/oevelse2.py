@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 print('Nu skal vi tælle vores komponenter:')
-print('Outputs', 25 + 30 / 6)
+print('Outputs', 25 + 30 / 6) # "," adskiller de ting der skal printes
 print('Inputs', 100 - 25 * 3 / 4)
 print('Nu tæller vi også lige dupont-kablerne:')
 print(3 + 2 + 1 - 5 + 4 * 2 - 1 / 4 + 6)
