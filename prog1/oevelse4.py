@@ -56,7 +56,7 @@ def toggle_all():
 #     toggle(led3)
 
 # øvelse 4.6 (lyskryds)
-# laver simpen toggle funktion
+# laver simpel toggle funktion
 def toggle(name):
     name.value(not name.value())
     
