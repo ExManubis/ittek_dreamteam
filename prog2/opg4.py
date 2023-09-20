@@ -12,8 +12,6 @@ lcd = GpioLcd(rs_pin=Pin(27), enable_pin=Pin(25),d4_pin=Pin(33), d5_pin=Pin(32),
 lcd.clear()
 lcd.putstr("Hej Valdemar, jeg er fanget herinde, hjælp!")
 
-sleep_time_short = 0.1
-
 def buzz(d,t,p):
     pwm_buzz.duty(d) #For at tænde for det, også lydniveau
     pwm_buzz.freq(t) #Toner amn kan få ved at justere på frekvensen i HZ
