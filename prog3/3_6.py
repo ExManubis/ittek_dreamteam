@@ -4,13 +4,13 @@ from machine import Pin, PWM
 from time import sleep
 
 # antal pixels
-n = 12
+n = 12 # variabel med antal pixels
 
 # pin den er tilkoblet
-p = 15
+p = 15 # variabel med tilkoblet pin
 
 # neopixel objekt
-np = neopixel.NeoPixel(machine.Pin(p), n)
+np = neopixel.NeoPixel(machine.Pin(p), n) # bruger de to varibaler n + p
 
 ###########################################
 #                funktioner               #
@@ -18,7 +18,7 @@ np = neopixel.NeoPixel(machine.Pin(p), n)
 
 # ens farve funktion
 def set_color(r, g, b):
-    for i in range(n): 
+    for i in range(n): # n = 12
         np[i] = (r, g, b)
         np.write()
         
@@ -51,7 +51,15 @@ while True:
         
         if len(mqtt.besked) != 0: # Her nulstilles indkommende beskeder
             mqtt.besked = ""
-            
+
+
+
+
+
+
+
+
+
         mqtt.sync_with_adafruitIO()
     
     except KeyboardInterrupt: # Stopper programmet når der trykkes Ctrl + c
