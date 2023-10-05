@@ -4,7 +4,7 @@ def do_connect():
     wlan.active(True)
     if not wlan.isconnected():
         print('connecting to network...')
-        wlan.connect('Batcave-24', 'Thermopylae480')
+        wlan.connect('SSID', 'PASSWORD')
         while not wlan.isconnected():
             pass
         print('network config:', wlan.ifconfig()[0]) # return IP
