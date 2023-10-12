@@ -32,4 +32,5 @@ while True:
 
     if usb.poll(0):
         string = sys.stdin.readline()
-        
+        test
+        return string()
