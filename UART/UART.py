@@ -32,5 +32,8 @@ while True:
 
     if usb.poll(0):
         string = sys.stdin.readline()
-        test
-        return string()
+        sys.stdin.readline()
+        string = string.strip()
+        print('USB  : ' + string)
+
+        uart_remote.write(string + '\n')
