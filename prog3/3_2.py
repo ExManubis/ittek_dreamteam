@@ -22,5 +22,5 @@ def clear():
         np.write()
 
 while 10:
-set_color(0, 0, 255)
-clear()
+    set_color(0, 0, 255)
+    clear()
