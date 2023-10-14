@@ -10,10 +10,11 @@ uart_remote_pin_rx = 32         # Remote UART RX pin
 uart_remote_speed = 9600        # Remote UART speed
 
 battery = ADC(Pin(25, Pin.IN)) 
+bat_acd = battery.read()
 
 # User data
 group_id = '8'                    # Gruppe nummer
-batVoltage = battery.read()
+batVoltage = bat_acd // 
 
 # Objects
 uart_remote = UART(uart_remote_port, baudrate = uart_remote_speed, tx = uart_remote_pin_tx, rx = uart_remote_pin_rx)
