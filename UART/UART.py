@@ -14,7 +14,7 @@ bat_acd = battery.read()
 
 # User data
 group_id = '8'                    # Gruppe nummer
-batVoltage = bat_acd // 
+#batVoltage = bat_acd // 
 
 # Objects
 uart_remote = UART(uart_remote_port, baudrate = uart_remote_speed, tx = uart_remote_pin_tx, rx = uart_remote_pin_rx)
@@ -36,7 +36,7 @@ while True:
             string = group_id
             uart_remote.write(string + '\n')
         elif string == 'rd bat':
-            string = str(batVoltage)
+            string = str(bat_acd)
             uart_remote.write(string + '\n')
         else:    
             print('Remote: ' + string)
